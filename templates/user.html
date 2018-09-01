@@ -1,0 +1,8 @@
+<h1>Name: {{ profile[1] }}</h1>
+<h1>Email: {{ profile[2] }}</h1>
+
+<form method="POST" action="{{ url_for('users', id=3) }}">
+    <input type="text" name="name" value="name">
+    <input type="email" name="email" value="email">
+    <input type="submit">
+</form>
